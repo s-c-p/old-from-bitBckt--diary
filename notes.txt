@@ -1,0 +1,29 @@
+custom commit messages
+
+file contains hash of file containing sha256 of pwd, that way
+NOONE will be able to reverse-derive my pwd from sha1 that is
+currently hard coded in src code and is exposed when I upload
+it to github, plus, the fear that mere deleting of pwd file
+root dir will cause loss of pwd is removed cuz now we have 2
+step verification
+
+DONE:
+shreadder
+manual git init
+git config --local user.name "S C Prasad"
+git config --local user.email "scp@example.com"
+git add *
+git commit -m 
+
+
+DONE:
+securing shell injections, search for all uses of 'shell=True'
+
+for deleting operations
+REPLACE 	del "%(
+BY		os.remove(
+
+similarly for opening file use
+os.startfile()
+---------------------------------
+for blocked execution by subprocess.call use subprocess.Popen
